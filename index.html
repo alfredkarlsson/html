@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang=”sv”>
+	<head>
+		<meta charset=”utf-8”>
+
+		<title>Sidans titel</title>
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bubbler+One&family=Luckiest+Guy&family=Montserrat&display=swap" rel="stylesheet">
+
+		<style>
+			body {
+				background-image:url("https://i2.wp.com/nutopia.se/wp-content/uploads/2011/12/skyrim.jpg?resize=590%2C369");
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-position: center -20px;
+				background-attachment:fixed;
+font-family: 'Montserrat', sans-serif;
+				
+}
+
+main {
+	background-color:#ffffff;
+	width: 500px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:20%;
+}
+
+article {
+	padding:10px;
+}
+
+
+
+h1, h2 {
+	font-family: 'Luckiest Guy', cursive;
+}
+
+#ingress {
+	font-family: 'Bubbler One', sans-serif;
+	font-size: 15pt;
+}
+
+
+
+		</style>
+		<script>
+
+		function changeColor(color) {
+			document.querySelector("article").style.backgroundColor = color;
+		}
+
+		var bird = false;
+
+		function changeBird() {
+			if (bird) { 
+removeBird(); 
+bird = false;
+}
+			else { 
+addBird(); 
+bird = true;
+}
+		}
+
+		function addBird() {
+				document.querySelector("article").innerHTML += "<img class='bild' src='https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Limnodromus_scolopaceus1.jpg/250px-Limnodromus_scolopaceus1.jpg'>";
+		}
+
+		function removeBird() {
+			document.querySelector(".bild").remove();
+		}
+
+		function changeImage() { 
+			document.querySelector("#header").style.backgroundImage = "url('https://cdn.dlcompare.com/game_tetiere/img/elderscrolls5skyrim_img4.jpg')";
+			}
+
+		</script>
+	</head>
+	<body>
+
+
+
+	<main>
+		<div id="header"></div>
+	
+	<article>
+	<h1>Hej på er!</h1>
+
+<p id="ingress"><b></b>  <i><b>tiden</b></i> <br>
+</p> 
+
+<p> Träutensilierna samma själv ser vid på ingalunda sorgliga hans ordningens, redan varit helt vi bäckasiner mot enligt söka, räv äng söka kom och fram sig plats.</p>
+
+<h2>Där kan bäckasiner</h2>
+
+
+
+<p></p>
+		
+		<button onclick="changeColor('Chocolate')">Brun</button>
+<button onclick="changeColor('GhostWhite')">Vit</button>
+<button onclick="changeColor('DarkRed')">Röd</button>
+<button onclick="changeColor('LightGreen')">Grön</button>
+<br>
+<button onclick="changeBird()">Mer fåglar</button>
+<button onclick="changeImage()">Annan mat</button>
+	</article>
+</main>
+
+
+
+	</body>
+</html>
+
